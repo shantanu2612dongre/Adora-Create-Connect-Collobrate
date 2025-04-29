@@ -1,18 +1,18 @@
 
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import FeaturesSection from "@/components/FeaturesSection";
-import HowItWorksSection from "@/components/HowItWorksSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import CallToActionSection from "@/components/CallToActionSection";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/landing/Navbar";
+import FeaturesSection from "@/components/landing/FeaturesSection";
+import HowItWorksSection from "@/components/landing/HowItWorksSection";
+import TestimonialsSection from "@/components/landing/TestimonialsSection";
+import CallToActionSection from "@/components/landing/CallToActionSection";
+import ServicesSection from "@/components/landing/ServicesSection";
+import Footer from "@/components/landing/Footer";
 
 const Index = () => {
   return (
     <main className="min-h-screen bg-black text-white">
       <Navbar />
-      <HeroSection />
       <FeaturesSection />
+      <ServicesSection/>
       <HowItWorksSection />
       <TestimonialsSection />
       <CallToActionSection />

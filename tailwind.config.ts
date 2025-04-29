@@ -68,6 +68,7 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        
         "fade-in": {
           "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
@@ -83,6 +84,13 @@ export default {
         "fade-in": "fade-in 0.5s ease-out forwards",
         "bounce": "bounce 0.8s ease-in-out infinite",
       },
+      theme: {
+        extend: {
+          fontFamily: {
+            orbitron: ['Orbitron', 'sans-serif'],
+          },
+        },
+      },
       backgroundImage: {
         'gradient-primary': 'linear-gradient(to right, #000000, #0EA5E9)',
         'gradient-secondary': 'linear-gradient(to right, #8B5CF6, #000000)',
@@ -90,5 +98,8 @@ export default {
       },
     },
   },
+  
+  
+  
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;

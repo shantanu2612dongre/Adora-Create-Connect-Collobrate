@@ -1,0 +1,88 @@
+import { Campaign, Creator } from '../types';
+
+export const mockCreator: Creator = {
+  id: '1',
+  name: 'Alex Morgan',
+  profileImage: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  instagramConnected: true,
+  instagramStats: {
+    followers: 24500,
+    posts: 342,
+    engagementRate: 3.2,
+  },
+  niche: 'Fitness',
+  audienceDemographics: {
+    countries: ['United States', 'Canada', 'United Kingdom'],
+    ageGroups: ['18-24', '25-34'],
+  },
+  stats: {
+    appliedCampaigns: 18,
+    acceptedCampaigns: 12,
+    completedCampaigns: 10,
+  },
+};
+
+export const mockCampaigns: Campaign[] = [
+  {
+    id: '1',
+    brandName: 'FitLife',
+    brandLogo: 'https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    title: 'Summer Fitness Challenge',
+    description: 'Promote our new summer fitness program with 3 dedicated posts and stories over 2 weeks.',
+    nicheTags: ['Fitness', 'Health', 'Wellness'],
+    paymentType: 'Paid',
+    brandType: 'Fitness',
+    isHighPaying: true,
+  },
+  {
+    id: '2',
+    brandName: 'Wanderlust',
+    brandLogo: 'https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    title: 'Travel Essentials Showcase',
+    description: 'Feature our travel accessories in your next adventure. Perfect for travel creators.',
+    nicheTags: ['Travel', 'Lifestyle', 'Adventure'],
+    paymentType: 'Barter',
+    brandType: 'Travel',
+  },
+  {
+    id: '3',
+    brandName: 'GlowSkin',
+    brandLogo: 'https://images.pexels.com/photos/5217960/pexels-photo-5217960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    title: 'Skincare Routine Collab',
+    description: 'Create a morning routine featuring our new vitamin C serum. Looking for authentic reviews.',
+    nicheTags: ['Beauty', 'Skincare', 'Lifestyle'],
+    paymentType: 'Paid',
+    brandType: 'Beauty',
+  },
+  {
+    id: '4',
+    brandName: 'TechNow',
+    brandLogo: 'https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    title: 'Smart Home Gadgets Review',
+    description: 'Review our latest smart home devices in a creative way. Perfect for tech enthusiasts.',
+    nicheTags: ['Tech', 'Gadgets', 'Lifestyle'],
+    paymentType: 'Paid',
+    brandType: 'Tech',
+    isUrgent: true,
+  },
+  {
+    id: '5',
+    brandName: 'Urban Eats',
+    brandLogo: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    title: 'Food Delivery Showcase',
+    description: 'Showcase our food delivery service with a creative unboxing story or post.',
+    nicheTags: ['Food', 'Lifestyle', 'Urban'],
+    paymentType: 'Paid',
+    brandType: 'Food',
+  },
+  {
+    id: '6',
+    brandName: 'StyleBox',
+    brandLogo: 'https://images.pexels.com/photos/1374910/pexels-photo-1374910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    title: 'Fashion Box Unboxing',
+    description: 'Unbox and style our seasonal fashion box in your unique way. Open to creative ideas!',
+    nicheTags: ['Fashion', 'Style', 'Unboxing'],
+    paymentType: 'Barter',
+    brandType: 'Fashion',
+  },
+];

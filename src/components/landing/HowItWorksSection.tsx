@@ -26,7 +26,27 @@ const steps = [
 
 const HowItWorksSection = () => {
   return (
-    <section id="how-it-works" className="py-20 relative bg-gradient-to-br from-black to-blue-900/50">
+    <section id="features" className="py-20 relative overflow-hidden">
+    {/* Galaxy Background */}
+    <div className="absolute inset-0">
+      <div
+        className="absolute inset-0 opacity-90"
+        style={{
+          background: `
+            radial-gradient(circle at 30% 30%, rgba(0, 140, 255, 0.15), transparent 60%),
+            radial-gradient(circle at 70% 70%, rgba(255, 0, 150, 0.15), transparent 60%),
+            radial-gradient(circle at 50% 50%, rgba(255, 120, 0, 0.1), transparent 70%)
+          `,
+          backgroundBlendMode: "screen",
+          filter: "blur(80px)",
+          transform: "translateZ(0)",
+          animation: "floatNebula 60s ease-in-out infinite"
+        }}
+      />
+      {/* Main Background */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#3f1d2c] z-[-1]" />
+    </div>
+      
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
