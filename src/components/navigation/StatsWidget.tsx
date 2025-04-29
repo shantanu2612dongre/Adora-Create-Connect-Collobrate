@@ -32,7 +32,7 @@ const StatsWidget: React.FC<StatsWidgetProps> = ({ creator }) => {
   ];
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-4 transition-all duration-300">
+    <div className="bg-white/10 dark:bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg border border-white/10 p-6 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 hover:shadow-2xl">
       <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-3">Your Campaign Stats</h3>
       
       <div className="grid grid-cols-3 gap-3">

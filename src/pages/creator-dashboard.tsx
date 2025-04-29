@@ -40,11 +40,11 @@ function App() {
     <div 
       className="min-h-screen relative bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: 'url(/gradient1.png)',
+        backgroundImage: 'url(/nebula.png)',
       }}
     >
       {/* Dark overlay with slight transparency */}
-      <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
       
       {/* Content */}
       <div className="relative z-10">
@@ -53,43 +53,43 @@ function App() {
           profileImage={creator.profileImage}
         />
         
-        <main className="container mx-auto px-4 py-6">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="lg:col-span-2">
-              <ProfileSection 
-                creator={creator} 
-                onUpdateCreator={handleUpdateCreator} 
-              />
-            </div>
-            
-            <div>
-              <StatsWidget creator={creator} />
-            </div>
-          </div>
-          
-          {recommendedCampaigns.length > 0 && (
-            <div className="mt-6">
-              <CampaignFeed 
-                campaigns={recommendedCampaigns} 
-                title="Recommended For You" 
-              />
-            </div>
-          )}
-          
-          <div className="mt-6">
-            <SearchFilters 
-              filters={filters}
-              setFilters={setFilters}
-            />
-          </div>
-          
-          <div className="mt-6">
-            <CampaignFeed 
-              campaigns={filteredCampaigns}
-              title="Available Campaigns" 
-            />
-          </div>
-        </main>
+        <main className="container mx-auto px-4 py-6 pt-32">
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <div className="lg:col-span-2">
+      <ProfileSection 
+        creator={creator} 
+        onUpdateCreator={handleUpdateCreator} 
+      />
+    </div>
+    
+    <div>
+      <StatsWidget creator={creator} />
+    </div>
+  </div>
+  
+  {recommendedCampaigns.length > 0 && (
+    <div className="mt-6">
+      <CampaignFeed 
+        campaigns={recommendedCampaigns} 
+        title="Recommended For You" 
+      />
+    </div>
+  )}
+  
+  <div className="mt-6">
+    <SearchFilters 
+      filters={filters}
+      setFilters={setFilters}
+    />
+  </div>
+  
+  <div className="mt-6">
+    <CampaignFeed 
+      campaigns={filteredCampaigns}
+      title="Available Campaigns" 
+    />
+  </div>
+</main>
       </div>
     </div>
   );

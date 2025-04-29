@@ -40,7 +40,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({ creator, onUpdateCreato
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6 transition-all duration-300">
+    <div className="bg-white/10 dark:bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg border border-white/10 p-6 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 hover:shadow-2xl">
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
         <div className="relative">
           <img 
